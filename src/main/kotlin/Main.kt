@@ -26,7 +26,7 @@ import java.io.IOException
 var client: OkHttpClient = OkHttpClient()
 
 fun main() {
-    post("http://localhost:8081/emailer/message", "{\"name\":\"josdem\",\"email\":\"joseluis.delacruz@gmail.com\",\"message\":\"Hello from curl!\", \"template\":\"message.ftl\",\"token\":\"userToken\"}")
+    post("http://localhost:8081/emailer/message", "{\"name\":\"josdem\",\"email\":\"joseluis.delacruz@gmail.com\",\"message\":\"Hello from script!\", \"template\":\"message.ftl\",\"token\":\"userToken\"}")
 }
 
 @Throws(IOException::class)
