@@ -1,9 +1,14 @@
 plugins {
     kotlin("jvm") version "2.0.21"
+    application
 }
 
 group = "com.josdem.http.client"
 version = "1.0-SNAPSHOT"
+
+application {
+    mainClass = "com.josdem.http.client.MainKt"
+}
 
 repositories {
     mavenCentral()
@@ -17,6 +22,8 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
 kotlin {
     jvmToolchain(21)
 }
+
